@@ -1,7 +1,7 @@
 import string
 
-key = input("Enter key: ")
-text = input("Enter text to decode: ")
+key = int(input("Enter key: "))
+text = input("Enter text to decode: ").lower()
 
 alphabet = list(string.ascii_lowercase)
 
@@ -11,7 +11,7 @@ def decodeText(text):
         if i == " ":
             decodedText.append(i)
         else:
-            alphabetIndex = string.lowercase.index(i)
+            alphabetIndex = string.ascii_lowercase.index(i)
             newAlphabetIndex = alphabetIndex - key
             decodedText.append(alphabet[newAlphabetIndex])
     
