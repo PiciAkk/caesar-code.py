@@ -5,7 +5,7 @@ text = input("Enter text to encode: ").lower()
 
 alphabet = list(string.ascii_lowercase)
 
-def encodeText(text):
+def encodeText(text, key):
     encodedText = []
     for i in list(text):
         if i == " ":
@@ -17,4 +17,4 @@ def encodeText(text):
     
     return "".join(encodedText)
     
-print(f"Encoded text: {encodeText(text)}")
+print(f"Encoded text: {encodeText(text, key)}")
