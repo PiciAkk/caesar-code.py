@@ -30,11 +30,11 @@ python encoder.py
 - Done
 ### Using as library
 ```python
-import decode
-import encode
+import decoder
+import encoder
 
-decode.decodeText(text, key)
+decode.decodeText(text.lower(), key) # text needs to be in lowercase
 # returns decoded text
-encode.encodeText(text, key)
+encode.encodeText(text.lower(), key) # text needs to be in lowercase
 # returns encoded text
 ```

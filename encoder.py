@@ -1,8 +1,5 @@
 import string
-
-key = int(input("Enter key: "))
-text = input("Enter text to encode: ").lower()
-
+    
 alphabet = list(string.ascii_lowercase)
 
 def encodeText(text, key):
@@ -17,4 +14,7 @@ def encodeText(text, key):
     
     return "".join(encodedText)
     
-print(f"Encoded text: {encodeText(text, key)}")
+if __name__ == "__main__":
+    key = int(input("Enter key: "))
+    text = input("Enter text to encode: ").lower()
+    print(f"Encoded text: {encodeText(text, key)}")

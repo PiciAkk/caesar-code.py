@@ -1,8 +1,5 @@
 import string
-
-key = int(input("Enter key: "))
-text = input("Enter text to decode: ").lower()
-
+    
 alphabet = list(string.ascii_lowercase)
 
 def decodeText(text, key):
@@ -17,4 +14,7 @@ def decodeText(text, key):
     
     return "".join(decodedText)
     
-print(f"Decoded text: {decodeText(text, key)}")
+if __name__ == "__main__":
+    key = int(input("Enter key: "))
+    text = input("Enter text to decode: ").lower()
+    print(f"Decoded text: {decodeText(text, key)}")
