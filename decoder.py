@@ -5,7 +5,7 @@ text = input("Enter text to decode: ").lower()
 
 alphabet = list(string.ascii_lowercase)
 
-def decodeText(text):
+def decodeText(text, key):
     decodedText = []
     for i in list(text):
         if i == " ":
@@ -17,4 +17,4 @@ def decodeText(text):
     
     return "".join(decodedText)
     
-print(f"Decoded text: {decodeText(text)}")
+print(f"Decoded text: {decodeText(text, key)}")
